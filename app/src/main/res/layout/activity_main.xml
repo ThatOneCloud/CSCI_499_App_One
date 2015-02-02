@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/coin_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleText"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:inputType="none"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/textViewColor"
+        android:background="#7dffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/headsButtonText"
+        android:textSize="20sp"
+        android:id="@+id/headsButton"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:minWidth="150dp"
+        android:minHeight="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tailsButtonText"
+        android:textSize="20sp"
+        android:id="@+id/tailsButton"
+        android:layout_below="@+id/headsButton"
+        android:layout_alignLeft="@+id/headsButton"
+        android:layout_alignStart="@+id/headsButton"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/headsButton"
+        android:layout_alignEnd="@+id/headsButton"
+        android:minWidth="150dp"
+        android:minHeight="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a guess to find out"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/resultTextSize"
+        android:background="@color/textBgColor"
+        android:id="@+id/resultMessageText"
+        android:layout_below="@+id/tailsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/0 Guesses Correct"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/resultTextSize"
+        android:background="@color/textBgColor"
+        android:id="@+id/guessRatioText"
+        android:layout_below="@+id/resultMessageText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:0 Heads:Tails"
+        android:textColor="@color/textViewColor"
+        android:textSize="@dimen/resultTextSize"
+        android:background="@color/textBgColor"
+        android:id="@+id/flipRatioText"
+        android:layout_below="@+id/guessRatioText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>
