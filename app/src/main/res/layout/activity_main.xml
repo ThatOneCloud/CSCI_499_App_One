@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -20,8 +20,6 @@
             android:layout_height="wrap_content"
             android:text="@string/titleText"
             android:id="@+id/textView"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
             android:inputType="none"
             android:textSize="@dimen/title_text_size"
             android:textColor="@color/textViewColor"
@@ -34,8 +32,6 @@
             android:textSize="20sp"
             android:id="@+id/headsButton"
             android:layout_marginTop="50dp"
-            android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true"
             android:minWidth="150dp"
             android:minHeight="60dp" />
 
@@ -45,12 +41,7 @@
             android:text="@string/tailsButtonText"
             android:textSize="20sp"
             android:id="@+id/tailsButton"
-            android:layout_below="@+id/headsButton"
-            android:layout_alignLeft="@+id/headsButton"
-            android:layout_alignStart="@+id/headsButton"
             android:layout_marginTop="10dp"
-            android:layout_alignRight="@+id/headsButton"
-            android:layout_alignEnd="@+id/headsButton"
             android:minWidth="150dp"
             android:minHeight="60dp" />
 
@@ -62,8 +53,6 @@
             android:textSize="@dimen/resultTextSize"
             android:background="@color/textBgColor"
             android:id="@+id/resultMessageText"
-            android:layout_below="@+id/tailsButton"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="75dp" />
 
         <TextView
@@ -74,8 +63,6 @@
             android:textSize="@dimen/resultTextSize"
             android:background="@color/textBgColor"
             android:id="@+id/guessRatioText"
-            android:layout_below="@+id/resultMessageText"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp" />
 
         <TextView
@@ -86,10 +73,8 @@
             android:textSize="@dimen/resultTextSize"
             android:background="@color/textBgColor"
             android:id="@+id/flipRatioText"
-            android:layout_below="@+id/guessRatioText"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </ScrollView>
