@@ -8,4 +8,11 @@
     <string name="headsButtonText">Heads</string>
     <string name="tailsButtonText">Tails</string>
 
+    <string name="dieTitle">Die Simulator 1d6</string>
+    <string name="diePrompt">Touch!</string>
+    <string name="dieResults">You haven\'t rolled yet</string>
+
+    <string name="CoinOption">Flip Coins</string>
+    <string name="DieOption">Roll Dice</string>
+
 </resources>
